@@ -34,19 +34,19 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #ffbb00;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
+$background: black;
+$background-alt: black;
 
 // Define border colors
-$border: #dcd9d9;
+$border: darken($base-color, 10%);
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: darken($base-color, 10%);
+$text:  darken($base-color, 10%);
 
 /*
     ---------------------
@@ -174,7 +174,7 @@ header {
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
-            background: #eee;
+            background: rgb(0, 0, 0);
             border-radius: 4px;
         }
 
@@ -237,6 +237,7 @@ header {
 
 footer {
     padding: 50px 0;
+    background-color: black;
 }
 
 .copyright {
@@ -294,15 +295,15 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: black;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    border: 3px solid black;
     border-radius: 30px;
     @include transition();
 
     &:hover {
         color: $base-color;
-        background: #fff;
+        background: black;
         text-decoration: none;
     }
 }
@@ -350,7 +351,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/beer.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -369,7 +370,7 @@ footer {
     }
 
     h1 {
-        color: #fff;
+        color: rgb(0, 0, 0);
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -378,7 +379,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: rgb(0, 0, 0);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -393,7 +394,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba($base-color-hover, 0.2);
     z-index: 1;
 }
 
@@ -405,7 +406,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: black;
 
     span {
         cursor: pointer;
@@ -448,6 +449,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    background-color: black;
 
     h2 {
         color: $heading;
@@ -507,8 +509,8 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
+    background: black;
+    border: 1px solid #2c2c2c;
     padding: 15px;
     border-radius: 3px;
     text-align: left;
@@ -542,9 +544,13 @@ footer {
     margin-bottom: 30px;
 }
 
+ul {
+    color: $text;
+}
+
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: black;
     width: 50px;
     height: 50px;
     background: $base-color;
@@ -580,6 +586,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background-color: black;
 
     h2 {
         color: $heading;
@@ -634,6 +641,7 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background-color: black;
 
     h2 {
         color: $heading;
@@ -646,7 +654,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: black;
     border-radius: 4px;
 }
 
@@ -697,6 +705,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background-color: black;
 
     h2 {
         color: $heading;
@@ -715,7 +724,7 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
+        background: lighten($background-alt, 5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
@@ -735,7 +744,7 @@ footer {
 
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
+        color: black;
         font-weight: 500;
     }
 }
@@ -752,10 +761,10 @@ footer {
         border: none;
         margin-bottom: 10px;
         background: darken($base-color, 15%);
-        color: #fff;
+        color: black;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color: black;
         }
 
         &:focus {
@@ -772,7 +781,7 @@ footer {
     button {
         display: block;
         width: 100%;
-        background: #fff;
+        background: black;
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
@@ -808,7 +817,7 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
-    background: #fff;
+    background: black;
     text-align: left;
 
     h3 {
