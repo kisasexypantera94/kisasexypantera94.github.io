@@ -118,6 +118,14 @@ body {
                 margin: 0 0 15px 0;
             }
 
+            // h2 {
+            //     font-size: 0.9em;
+            //     font-weight: 300;
+            //     color: #7e8890;
+            //     margin: 0 0 15px 0;
+            // }
+
+
             p {
                 color: $text;
                 font-size: 0.9em;
@@ -615,6 +623,7 @@ ul {
 
     h4 {
         color: $text;
+        color: #7e8890;
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
@@ -629,6 +638,10 @@ ul {
     ul {
         padding: 0 0 0 15px;
     }
+}
+
+.education-date {
+    color: #7e8890;
 }
 
 /*
